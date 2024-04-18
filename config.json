@@ -1,0 +1,6 @@
+{
+  "app_name": "GINDEMO1",
+  "port": "8080",
+  "static_path": "/manage/static",
+  "mode": "dev"
+}
