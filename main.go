@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"ginDemo1/config"
 	"ginDemo1/controller"
 	"ginDemo1/datasource"
@@ -29,6 +30,7 @@ func main() {
 		iris.WithoutServerError(iris.ErrServerClosed),
 		iris.WithOptimizations,
 	)
+	testfunc()
 
 }
 
@@ -94,4 +96,8 @@ func configatino(app *iris.Application) {
 			"data":   iris.Map{},
 		})
 	})
+}
+
+func testfunc() {
+	fmt.Println("hello golang")
 }
